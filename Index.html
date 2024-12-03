@@ -157,8 +157,39 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%; 
+        padding: 10px; 
+    }
+    .feature-cards {
+        display: flex; 
+        flex-direction: column; 
+    }
+    .feature-card {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+    .feature-cards {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+    .feature-card {
+        width: 30%;
+        margin-bottom: 15px;
+    }
+}
     </style>
 </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
     <header>
         <nav>
